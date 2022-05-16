@@ -2,8 +2,11 @@ import styled from "styled-components";
 import t from "prop-types";
 import Item, { itemShape } from "./Item";
 
-const Center = styled.div`
+const Container = styled.div`
   text-align: center;
+  max-width: ${(props) => props.theme.maxWidth};
+  margin: 0 auto;
+  margin-top: 2rem;
 `;
 
 const ItemsList = styled.div`
@@ -16,13 +19,13 @@ const ItemsList = styled.div`
 
 const Items = ({ items }) => {
   return (
-    <Center>
+    <Container>
       <ItemsList>
         {items.map((item) => (
           <Item item={item} key={item.id} />
         ))}
       </ItemsList>
-    </Center>
+    </Container>
   );
 };
 
