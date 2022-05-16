@@ -10,10 +10,10 @@ const Item = ({ item }) => {
     <ItemStyles>
       {item.image && <img src={item.image} alt={item.title} />}
       <Title>
-        <a href={`/item/${item.id}`}>{item.title}</a>
+        <a href={`/item/${item.id}`}>Workshop Bag</a>
       </Title>
-      <PriceTag>{formatMoney(item.price)}</PriceTag>
-      <p>{item.description}</p>
+      <PriceTag>{formatMoney(4800)}</PriceTag>
+      {/* TODO add a description */}
     </ItemStyles>
   );
 };

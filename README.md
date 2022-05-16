@@ -1,7 +1,20 @@
 # Aibel Shop
 
-Welcome to the Workshop. Follow the steps below to setup the app.
+Welcome to the Workshop.
 
+# Workshop Tasks
+
+As part of the Workshop you have been tasked with improving certain areas of the website. Here are your tasks:
+
+  - [ ] Follow the steps below to get the app up and running 
+  - [ ] Add a custom font
+  - [ ] Add a custom favicon
+  - [ ] Change page title
+  - [ ] Add description to Item
+  - [ ] Make `<Items>` in `App.js` use mock data
+  - [ ] Fetch API data in `useProduct`
+  - [ ] 
+  - [ ] Rewrite useProduct hook to use `react-query`
 ## Clone and Install
 
 ```sh
@@ -26,3 +39,4 @@ $ npm install
 # Run the full project
 $ npm start
 ```
+

@@ -1,5 +1,6 @@
 import Items from "./components/Items";
 import Page from "./components/Page";
+import { useProducts } from "./hooks/useProduct";
 
 const items = [
   {
@@ -13,9 +14,14 @@ const items = [
 ];
 
 function App() {
+  const { data, error, loading } = useProducts();
+
   return (
     <Page>
       <Items items={items} />
+      {loading && <p>loading...</p>}
+      {data.length > 0 && <pre>{JSON.stringify(data, null, 2)}</pre>}
+      {error && <p>error loading data...</p>}
     </Page>
   );
 }

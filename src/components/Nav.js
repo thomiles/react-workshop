@@ -5,7 +5,6 @@ const Nav = () => (
     <a href="/items">
       Shop
     </a>
-    <a href="/sell">Sell</a>
     <a href="/orders">Orders</a>
     <a href="/me">Account</a>
   </NavStyles>
