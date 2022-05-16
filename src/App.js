@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Items from "./components/Items";
+import Page from "./components/Page";
+
+const items = [
+  {
+    id: "123",
+    title: "Wayfarer Bag",
+    description:
+      "I adore the challenge of creating truly modern bags, wear personality and sense",
+    price: 2499,
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Page>
+      <Items items={items} />
+    </Page>
   );
 }
 
